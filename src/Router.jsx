@@ -1,14 +1,23 @@
-import React from 'react'
-import {Routes, Route, Navigate} from 'react-router-dom'
-const Router = () => {
-  return (
-    <Routes>
-    
-    
-    
-    
-    </Routes>
-  )
-}
+import React from "react";
+import { Routes, Route, Navigate, createBrowserRouter } from "react-router-dom";
+import PublicHome from "../src/page/PublicHome";
+import Login from "../src/page/Login";
+import Task from "./page/Task";
 
-export default Router
+const router = createBrowserRouter([
+  { path: "/", element: <PublicHome />,
+    children:[
+        {path:"/children", element:<Task></Task>}
+
+    ]
+
+        
+    
+
+
+   },
+  { path: "/login", element: <Login /> },
+
+]);
+
+export default router;
