@@ -1,11 +1,13 @@
 import React from 'react';
-import PublicHome from './page/PublicHome';
+import { Navigate, Outlet } from 'react-router-dom';
+import Dashboard from './page/Dashboard';
 
-const AuthRouter = ({ isAuthenticated, children }) => {
+
+const AuthRouter = ({ isAuthenticated }) => {
   if (!isAuthenticated) {
-    return <PublicHome />;
+    return <Navigate to={"/"}/>;
   } else {
-    return <>{children}</>;
+    return <Outlet/>;
   }
 };
 

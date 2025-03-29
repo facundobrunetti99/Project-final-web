@@ -1,17 +1,36 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import AuthRouter from './AuthRouter';
-import Project from './page/Project';
+import PrivHome from './page/PrivHome';
 import Task from './page/Task';
+import PublicHome from './page/PublicHome';
+import Login from './page/Login'
+import Project from './page/Project';
+import Dashboard from './page/Dashboard';
 
 const RouterConfig = ({ isAuthenticated }) => {
   return (
     <Routes>
-      {/* Definimos la ruta principal */}
-      <Route path="/" element={<AuthRouter isAuthenticated={isAuthenticated}><Project /></AuthRouter>}>
-        {/* Ruta hija de 'Project' */}
-        <Route path="home" element={<Task />} />
+      <Route path="/" element={<Dashboard/>}>
+        <Route path='/homepub' element={<PublicHome></PublicHome>}></Route>
+      <Route element={<AuthRouter isAuthenticated={isAuthenticated}/>}>
+            <Route path="/homepriv" element={<PrivHome />}>
+            </Route>
+            <Route path="/project" element={<Project />} />
+            <Route path="/project/task" element={<Task/>}></Route>
+        </Route>
+
+
+
+
+
       </Route>
+      <Route path='/login' element={<Login/>}>
+      </Route>
+
+    
+    
+     
     </Routes>
   );
 }
