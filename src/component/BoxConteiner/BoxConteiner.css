@@ -1,3 +1,36 @@
 .img-box{
-    width: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.conteiner-box{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    padding: 15px;
+    box-shadow: 7px 7px 7px rgba(62, 61, 61, 0.3);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.conteiner-box:hover{
+    box-shadow: 7px 7px 7px rgba(139, 139, 139, 0.3);
+}
+
+.title-conteiner-box{
+    color: #2b2a2a;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content-box{
+    color: #2b2a2a;
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

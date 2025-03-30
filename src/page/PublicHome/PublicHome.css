@@ -1,11 +1,12 @@
 .public-home{
     width: 100%;
-    background-color:#E8E1DB ;
 }
 
 .title-public-home{
     text-align: center;
-    color: #362E23;
-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-size: 35px;
+    color: #2b2a2a;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 45px;
+padding: 10px;
+margin-bottom: 40px;
 }

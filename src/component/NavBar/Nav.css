@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    background-color: #362E23;
+    background-image: linear-gradient(to bottom, #7828db, #d624f2);
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -16,12 +16,12 @@
     margin: auto;
     display: flex;
     justify-content: space-around;
-    border-bottom: 1px solid #aca8a5;
+    border-bottom: 1px solid #cdcbc9;
     padding: 5px;
 
 }
 .nav-ul-conteiner a{
-    color: #E8E1DB;
+    color: #f2f2f2;
     font-size: 22px;
     text-decoration: none;
 }
