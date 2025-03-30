@@ -9,6 +9,7 @@ const Nav = () => {
                 <Link to={'/login'}>Iniciar sesión</Link>
                 <Link to={'/project'}>Proyectos</Link>
                 <Link to={'/project/task'}>Tareas</Link>
+                <Link to={'/config'}>Configuracion</Link>
             </ul>
         </div>
     </>

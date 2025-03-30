@@ -1,0 +1,11 @@
+.public-home{
+    width: 100%;
+    background-color:#E8E1DB ;
+}
+
+.title-public-home{
+    text-align: center;
+    color: #362E23;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 35px;
+}
