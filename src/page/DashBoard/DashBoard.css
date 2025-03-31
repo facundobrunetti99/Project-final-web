@@ -1,10 +1,7 @@
-.main-dashboard{
-    width: 100%;
-    background-color:#f1eff3 ;
-
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
-
+.main-dashboard {
+  width: 100%;
+  background-color: #f3eeee;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }

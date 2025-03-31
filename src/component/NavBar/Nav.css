@@ -1,78 +1,69 @@
-
-
-
 .nav-abrir {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 260px; 
-    height: 100%;
-    background-image: linear-gradient(to bottom, #f1eff3, #6519c1);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    transition: left 0.3s ease;     z-index: 1000; 
-  }
-  
-  .nav-cerrar {
-    position: fixed;
-    top: 0;
-    left: -250px; 
-    width: 260px;
-    height: 100%;
-    background-image: linear-gradient(to bottom, #f1eff3, #6519c1);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    transition: left 0.3s ease; 
-    z-index: 1100;
-  }
-  
- 
-  .nav-ul-conteiner {
-    width: 50%;
-    margin: auto;
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-around;
-    
-    padding: 20px 0;
-    flex-wrap: nowrap;
-    list-style: none;
-    border-bottom: 1px solid #cdcbc9;
-    height: 350px;
-  }
-  
-  .nav-ul-conteiner a {
-    color: #FFF;
-    font-size: 22px;
-    text-decoration: none;
-    padding: 10px 0;
-    
-    transition: color 0.3s ease; 
-  }
-  
-  .nav-ul-conteiner a:hover {
-    color: #d624f2; 
-  }
-  
- 
-  .btn-open {
-    position: absolute;
-    top: 30px;
-    left: 80px;
-    font-size: 30px;
-    background-color: transparent;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    z-index: 1100; 
-  }
- 
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 210px;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #bf8af5, #7834c5); display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.nav-cerrar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 210px;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #bf8af5, #7834c5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  transition: left 0.3s ease;
+  z-index: 1100;
+}
+
+.nav-ul-conteiner {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px 0;
+  flex-wrap: nowrap;
+  list-style: none;
+  border-bottom: 1px solid #cdcbc9;
+  height: 350px;
+  margin-top: 150px;
+}
+
+.nav-ul-conteiner a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.nav-ul-conteiner a:hover {
+  color: #dbd8db;
+}
+
+.btn-open {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  font-size: 30px;
+  background-color: transparent;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}

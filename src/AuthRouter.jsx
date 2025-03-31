@@ -1,13 +1,11 @@
-import React from 'react';
-import { Navigate, Outlet } from 'react-router-dom';
-
+import React from "react";
+import { Navigate, Outlet } from "react-router-dom";
 
 const AuthRouter = ({ isAuthenticated }) => {
-  
   if (!isAuthenticated) {
-    return <Navigate to={"/"}/>;
+    return <Navigate to={"/"} />;
   } else {
-    return <Outlet/>;
+    return <Outlet />;
   }
 };
 

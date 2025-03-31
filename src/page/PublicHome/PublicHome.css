@@ -1,15 +1,25 @@
-.public-home{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.public-home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.title-public-home{
-    margin-top: 25px;
-    text-align: center;
-    color: #585757;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-size: 50px;
-padding: 10px;
-margin-bottom: 40px;
+.title-public-home {
+  text-align: center;
+  color: #3f3d3d;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.title-public-home p {
+  margin-top: 20px;
+  width: 70%;
+  display: flex;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 44px;
+  justify-content: center;
 }
