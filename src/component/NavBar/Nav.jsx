@@ -25,6 +25,7 @@ const Nav = () => {
    
       <div className={clase}>
         <ul className="nav-ul-conteiner">
+          <li><Link to={"/"}>Inicio</Link></li>
           <li><Link to={'/login'}>Iniciar sesión</Link></li>
           <li><Link to={'/project'}>Proyectos</Link></li>
           <li><Link to={'/project/task'}>Tareas</Link></li>

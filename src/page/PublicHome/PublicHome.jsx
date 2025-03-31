@@ -1,12 +1,16 @@
 import React from "react";
 import "../PublicHome/PublicHome.css";
 import BoxConteiner from "../../component/BoxConteiner/BoxConteiner";
+import Titlte from "../../component/Tittle/Titlte";
 const PublicHome = () => {
   return (
     <div className="public-home">
-      <div className="title-public-home">
-        <p>Gestiona tus proyectos, tareas y aplicaciones</p>
-      </div>
+
+      
+     
+ 
+      <Titlte clas={"title-public-home"} title={"Gestiona tus proyectos, tareas y aplicaciones"}/>
+
 
       <div className="conteiner-public-home">
         <BoxConteiner

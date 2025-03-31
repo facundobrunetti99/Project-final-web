@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import "../src/App.css";
 
 const App = () => {
-  const isAuthenticated = false;
+  const isAuthenticated = true;
   return (
     <Router>
       <RouterConfig isAuthenticated={isAuthenticated}></RouterConfig>
