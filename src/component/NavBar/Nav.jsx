@@ -28,7 +28,9 @@ const Nav = () => {
           <li><Link to={"/"}>Inicio</Link></li>
           <li><Link to={'/login'}>Iniciar sesión</Link></li>
           <li><Link to={'/project'}>Proyectos</Link></li>
-          <li><Link to={'/project/task'}>Tareas</Link></li>
+          <li><Link to={'/project/epics/'}>Epicas</Link></li>
+          <li><Link to={'/project/epics/stories'}>Stories</Link></li>
+          <li><Link to={'/project/epics/stories:task'}>Tareas</Link></li>
           <li><Link to={'/config'}>Configuración</Link></li>
         </ul>
       </div>

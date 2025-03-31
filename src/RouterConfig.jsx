@@ -14,9 +14,10 @@ const RouterConfig = ({ isAuthenticated }) => {
         <Route path="/" element={<PublicHome />}></Route>
 
         <Route element={<AuthRouter isAuthenticated={isAuthenticated} />}>
-          <Route path="/homepriv" element={<PrivHome />}></Route>
           <Route path="/project" element={<Project />} />
-          <Route path="/project/task" element={<Task />}></Route>
+          <Route path="/project/epics" element={<></>}></Route>
+          <Route path="/project/epics/stories" element={<></>}></Route>
+          <Route path="/project/epics/stories:task" element={<Task />}></Route>
         </Route>
       </Route>
 
