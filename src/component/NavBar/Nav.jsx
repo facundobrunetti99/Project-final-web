@@ -1,19 +1,38 @@
-import React from 'react'
+import React, {  use, useEffect, useState } from 'react'
 import '../NavBar/Nav.css'
 import { Link } from 'react-router-dom'
+import imgbutton from "../../img/imgFolder/menu644.png"
 const Nav = () => {
-  return (
-    <>
-        <div className='nav'>
-            <ul className='nav-ul-conteiner'>
-                <Link to={'/login'}>Iniciar sesión</Link>
-                <Link to={'/project'}>Proyectos</Link>
-                <Link to={'/project/task'}>Tareas</Link>
-                <Link to={'/config'}>Configuracion</Link>
-            </ul>
-        </div>
-    </>
-  )
-}
+  
+  const [abrir, setAbrir] = useState(false);
 
-export default Nav
+    const openMenu = () => {
+    setAbrir(!abrir); 
+  };
+
+  
+  const clase = abrir ? 'nav-abrir' : 'nav-cerrar';
+
+  return (
+    <div className='nav'>
+      
+      <button className="btn-open" onClick={openMenu}>
+
+        <img src={imgbutton} alt="" />
+
+      </button>
+
+   
+      <div className={clase}>
+        <ul className="nav-ul-conteiner">
+          <li><Link to={'/login'}>Iniciar sesión</Link></li>
+          <li><Link to={'/project'}>Proyectos</Link></li>
+          <li><Link to={'/project/task'}>Tareas</Link></li>
+          <li><Link to={'/config'}>Configuración</Link></li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default Nav;
