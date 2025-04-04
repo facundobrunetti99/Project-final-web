@@ -1,6 +1,6 @@
 import React from 'react'
 import "../Tittle/Title.css"
-const Titlte = ({clas,title}) => {
+const Title = ({clas,title}) => {
   return (
     <div className={clas}>
     <p>{title}</p>
@@ -8,4 +8,4 @@ const Titlte = ({clas,title}) => {
   )
 }
 
-export default Titlte
+export default Title

@@ -1,8 +1,12 @@
 import React from 'react'
-
+import Title from '../component/Tittle/Title'
 const Task = () => {
   return (
-    <div>Soy una tarea</div>
+    <div>
+      <Title clas={"title-public-home"} title={"Tareas"}></Title>
+
+
+    </div>
   )
 }
 

@@ -1,10 +1,10 @@
 import React from "react";
-import Titlte from "../component/Tittle/Titlte";
+import Title from "../component/Tittle/Title";
 
 const Project = () => {
   return (
     <div>
-      <Titlte clas={"title-public-home"} title={"Proyectos"}></Titlte>
+      <Title clas={"title-public-home"} title={"Proyectos"}></Title>
     </div>
   );
 };
