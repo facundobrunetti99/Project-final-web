@@ -1,7 +1,7 @@
 import React from "react";
 import "../PublicHome/PublicHome.css";
 import BoxConteiner from "../../component/BoxConteiner/BoxConteiner";
-import Titlte from "../../component/Tittle/Titlte";
+import Title from "../../component/Tittle/Title";
 const PublicHome = () => {
   return (
     <div className="public-home">
@@ -9,7 +9,7 @@ const PublicHome = () => {
       
      
  
-      <Titlte clas={"title-public-home"} title={"Gestiona tus proyectos, tareas y aplicaciones"}/>
+      <Title clas={"title-public-home"} title={"Gestiona tus proyectos, tareas y aplicaciones"}/>
 
 
       <div className="conteiner-public-home">
@@ -18,19 +18,26 @@ const PublicHome = () => {
           content={
             "Gestiona todos tus proyectos como tu quieras desde la creacion eliminacion y modificacion de los mismos"
           }
-          classn={"folder"}
-        ></BoxConteiner>
-        <BoxConteiner
-          title={"Gestionar archivos  "}
-          content={
-            "Gestiona todos tus archivos como tu quieras desde la creacion eliminacion y modificacion de los mismos"
-          }
           classn={"project"}
         ></BoxConteiner>
         <BoxConteiner
+          title={"Gestionar epicas"}
+          content={
+            "Gestiona todos tus archivos como tu quieras desde la creacion eliminacion y modificacion de los mismos"
+          }
+          classn={"epics"}
+        ></BoxConteiner>
+        <BoxConteiner
+          title={"Gestionar historias"}
+          content={
+            "Gestiona todas tus historias como tu quieras desde la creacion eliminacion y modificacion de los mismos"
+          }
+          classn={"stories"}
+        ></BoxConteiner>
+         <BoxConteiner
           title={"Gestionar tareas"}
           content={
-            "Gestiona todos tus tareas como tu quieras desde la creacion eliminacion y modificacion de los mismos"
+            "Gestiona todas tus tareas como tu quieras desde la creacion eliminacion y modificacion de los mismos"
           }
           classn={"task"}
         ></BoxConteiner>

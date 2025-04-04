@@ -1,9 +1,10 @@
 import React from 'react'
 import "../Epicas/Epic.css"
+import Title from '../../component/Tittle/Title'
 const Epic = () => {
   return (
     <div>
-        <Tilte></Tilte>
+        <Title clas={"title-public-home"} title={"Epicas"}></Title>
     </div>
   )
 }
