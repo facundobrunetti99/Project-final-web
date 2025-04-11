@@ -1,0 +1,8 @@
+.content-task{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    box-shadow:1px 7px 7px 7px rgba(62, 61, 61, 0.3);
+    width: 65%;
+    padding: 20px;
+}

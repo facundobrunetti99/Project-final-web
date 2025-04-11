@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import AuthRouter from "./AuthRouter";
-import Task from "./page/Task";
+import Task from "./page/Task/Task";
 import Login from "./page/Login";
 import Project from "./page/Project/Project";
 import Dashboard from "../src/page/DashBoard/Dashboard";
@@ -18,7 +18,7 @@ const RouterConfig = ({ isAuthenticated }) => {
           <Route path="/project" element={<Project />} />
           <Route path="/project/epics/:projectId" element={<Epic/>} />
           <Route path="/project/epics/stories/:epicId" element={<Stories></Stories>}></Route>
-          <Route path="/project/epics/stories/task/:task" element={<Task />}></Route>
+          <Route path="/project/epics/stories/task/:storieId" element={<Task />}></Route>
         </Route>
       </Route>
 

@@ -66,14 +66,21 @@ const stories = {
 const Stories = () => {
    const {epicId}=useParams();
    const st= stories[epicId] || [];
+   let m=stories[epicId].length;
   return (
 <div className='st-main'>
 <p className='st-main-title'>Stories del Proyecto {epicId}</p>
+<div className="content-date-stories">
+<p className='title-st-item'>Stories del usuario: {"Facundo"}</p>
+<p className="tittle-st-item">Cantidad de stories: {m}</p>
+<p className="tittle-st-item">Fecha de inicio: 20/03/2025</p>
+</div>
 <div className='div-st-item'>
   {st.map((sto, index) => (
     <Link className='link-st-content' to={`/project/epics/stories/task/${sto.id}`}  key={index}>
     <p className='title-st-item'>{sto.name}</p>
     <p className='contenet-st-item'>{sto.cont}</p>
+ 
   </Link>
   ))}
 </div>
