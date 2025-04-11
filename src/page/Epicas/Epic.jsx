@@ -20,6 +20,12 @@ const epicsData = {
     name:"Epic 1.3",
     cont:"Desarrollar un panel de administración intuitivo para gestionar usuarios, roles y permisos, mejorando la seguridad y eficiencia del sistema.",
     
+  },
+  {
+    id:1.4,
+    name:"Epic 1.4",
+    cont:"Desarrollar un panel de administración intuitivo para gestionar usuarios, roles y permisos, mejorando la seguridad y eficiencia del sistema.",
+    
   }],
   2: [
     {
@@ -69,16 +75,18 @@ const Epic = () => {
   const epics = epicsData[projectId] || [];
 
   return (
-    <div>
-      <h2>Épicas del Proyecto {projectId}</h2>
-      <ul>
+    <div className='epic-main'>
+      <p className='epic-main-title'>Épicas del Proyecto {projectId}</p>
+      
+      
+      <div className='div-epic-item'>
         {epics.map((epic, index) => (
-          <Link to={`/project/epics/stories/${epic.id}`}  key={index}>
-          <p>{epic.name}</p>
-          <p>{epic.cont}</p>
+          <Link className='link-epic-content' to={`/project/epics/stories/${epic.id}`}  key={index}>
+          <p className='title-epic-item'>{epic.name}</p>
+          <p className='contenet-epic-item'>{epic.cont}</p>
         </Link>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

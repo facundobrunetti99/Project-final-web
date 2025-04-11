@@ -67,17 +67,17 @@ const Stories = () => {
    const {epicId}=useParams();
    const st= stories[epicId] || [];
   return (
-    <div>
-         <h2>Épicas del Proyecto {epicId}</h2>
-         <ul>
-           {st.map((storie, index) => (
-             <Link to={`/project/epics/stories/task/${storie.id}`}  key={index}>
-             <p>{storie.name}</p>
-             <p>{storie.cont}</p>
-           </Link>
-           ))}
-         </ul>
-       </div>
+<div className='st-main'>
+<p className='st-main-title'>Stories del Proyecto {epicId}</p>
+<div className='div-st-item'>
+  {st.map((sto, index) => (
+    <Link className='link-st-content' to={`/project/epics/stories/task/${sto.id}`}  key={index}>
+    <p className='title-st-item'>{sto.name}</p>
+    <p className='contenet-st-item'>{sto.cont}</p>
+  </Link>
+  ))}
+</div>
+</div>
   )
 }
 
