@@ -7,6 +7,7 @@ import Project from "./page/Project/Project";
 import Dashboard from "../src/page/DashBoard/Dashboard";
 import PublicHome from "./page/PublicHome/PublicHome";
 import Epic from "./page/Epicas/Epic";
+import Stories from "./page/Stories/Stories";
 const RouterConfig = ({ isAuthenticated }) => {
   return (
     <Routes>
@@ -16,7 +17,7 @@ const RouterConfig = ({ isAuthenticated }) => {
         <Route element={<AuthRouter isAuthenticated={isAuthenticated} />}>
           <Route path="/project" element={<Project />} />
           <Route path="/project/epics/:projectId" element={<Epic/>} />
-          <Route path="/project/epics/stories/:storiesId" element={<></>}></Route>
+          <Route path="/project/epics/stories/:epicId" element={<Stories></Stories>}></Route>
           <Route path="/project/epics/stories/task/:task" element={<Task />}></Route>
         </Route>
       </Route>
