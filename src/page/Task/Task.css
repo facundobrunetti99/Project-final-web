@@ -2,7 +2,27 @@
   display: flex;
   flex-direction: column;
   margin: auto;
-  box-shadow: 1px 7px 7px 7px rgba(62, 61, 61, 0.3);
+  box-shadow: 3px 3px 3px rgba(80, 31, 135, 0.3);
   width: 65%;
   padding: 20px;
+}
+.task-title-general{
+  font-size: 25px;
+}
+.conteiner-task-item{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  box-shadow: 3px 3px 3px rgba(16, 149, 180, 0.3);
+  width: 65%;
+  padding: 20px;
+  margin-top: 10px;
+}
+.title-ts-item{
+  color: #2b2a2a;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+}
+.contenet-ts-item{
+  padding: 10px 0; 
 }
