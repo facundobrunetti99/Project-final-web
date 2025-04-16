@@ -5,12 +5,10 @@ import Title from "../../component/Tittle/Title";
 const PublicHome = () => {
   return (
     <div className="public-home">
-
-      
-     
- 
-      <Title clas={"title-public-home"} title={"Gestiona tus proyectos, tareas y aplicaciones"}/>
-
+      <Title
+        clas={"title-public-home"}
+        title={"Gestiona tus proyectos, tareas y aplicaciones"}
+      />
 
       <div className="conteiner-public-home">
         <BoxConteiner
@@ -34,7 +32,7 @@ const PublicHome = () => {
           }
           classn={"stories"}
         ></BoxConteiner>
-         <BoxConteiner
+        <BoxConteiner
           title={"Gestionar tareas"}
           content={
             "Gestiona todas tus tareas como tu quieras desde la creacion eliminacion y modificacion de los mismos"

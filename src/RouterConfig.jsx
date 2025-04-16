@@ -16,9 +16,15 @@ const RouterConfig = ({ isAuthenticated }) => {
 
         <Route element={<AuthRouter isAuthenticated={isAuthenticated} />}>
           <Route path="/project" element={<Project />} />
-          <Route path="/project/epics/:projectId" element={<Epic/>} />
-          <Route path="/project/epics/stories/:epicId" element={<Stories></Stories>}></Route>
-          <Route path="/project/epics/stories/task/:storieId" element={<Task />}></Route>
+          <Route path="/project/epics/:projectId" element={<Epic />} />
+          <Route
+            path="/project/epics/stories/:epicId"
+            element={<Stories></Stories>}
+          ></Route>
+          <Route
+            path="/project/epics/stories/task/:storieId"
+            element={<Task />}
+          ></Route>
         </Route>
       </Route>
 
