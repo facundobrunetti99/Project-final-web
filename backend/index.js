@@ -24,17 +24,17 @@ const createDefaultAdmin = async () => {
 
   if (!adminExists) {
     const admin = new User({
-      username: "facu",
-      password:'123', // La contraseña en texto claro
-    });
+      username:"facu",
+      password:"123", // Asegúrate de encriptar la contraseña
+    })
 
     const salt = await bcrypt.genSalt(10);
-    admin.password = await bcrypt.hash(admin.password, salt); // Se encripta la contraseña
+    admin.password = await bcrypt.hash(admin.password, salt); // Encriptar la contraseña
     await admin.save();
 
-    console.log("Administrador por defecto creado");
+    console.log("Administrador por defecto creado", admin);
   } else {
-    console.log("El usuario administrador ya existe");
+    console.log("El usuario administrador ya existe" );
   }
 };
 
