@@ -12,7 +12,7 @@ const RouterConfig = ({ isAuthenticated }) => {
   return (
     <Routes>
       <Route path="/" element={<Dashboard />}>
-        <Route path="/" element={<PublicHome />}></Route>
+        <Route index  element={<PublicHome />}></Route>
 
         <Route element={<AuthRouter isAuthenticated={isAuthenticated} />}>
           <Route path="/project" element={<Project />} />
