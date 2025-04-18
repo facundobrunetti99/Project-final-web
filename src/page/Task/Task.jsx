@@ -58,7 +58,7 @@ const Task = () => {
   };
 
   const { storieId } = useParams();
-  const tasks= task[storieId] || [];
+  const tasks = task[storieId] || [];
   return (
     <div>
       <Title clas={"title-public-home"} title={"Tareas"}></Title>
@@ -68,21 +68,21 @@ const Task = () => {
         <p className="task-title-cant">Cantidad de tareas:</p>
         <p className="task-title-rl">Tareas realizadas: </p>
       </div>
-      
-      {tasks.map((ts,i)=>(
+
+      {tasks.map((ts, i) => (
         <div
-        className="conteiner-task-item"
-        key={i}
-                  >
-        <p className="title-ts-item">{ts.name}</p>
-        <p className="contenet-ts-item">{ts.cont}</p>
-          </div>
+          className="conteiner-task-item"
+          key={i}
+        >
+          <p className="title-ts-item">{ts.name}</p>
+          <p className="contenet-ts-item">{ts.cont}</p>
+        </div>
       ))
-      
-  
+
+
       }
-      
-      
+
+
     </div>
   );
 };
