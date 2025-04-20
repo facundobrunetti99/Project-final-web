@@ -3,13 +3,14 @@ import bcrypt from "bcryptjs";
 import { createAccessToken } from "../libs/jwt.js";
 
 export const register = async (req, res) => {
-  const { username, password } = req.body;
+  const { email,username, password } = req.body;
 
   const pwhash = await bcrypt.hash(password, 10);
 
   try {
     const newUser = new User({
       username,
+      email,
       password: pwhash,
     });
     const userSaved = await newUser.save();
@@ -20,6 +21,7 @@ export const register = async (req, res) => {
     res.json({
       id: userSaved._id,
       username: userSaved.username,
+      email:userSaved.email,
       createdAt: userSaved.createdAt,
       updateAt: userSaved.updatedAt,
     });
@@ -28,14 +30,14 @@ export const register = async (req, res) => {
   }
 };
 export const login = async (req, res) => {
-  const {username, password } = req.body;
+  const {email,username, password } = req.body;
   try {
-      const userFound =await User.findOne({username})
+      const userFound =await User.findOne({email})
 
     if(!userFound)return res.status(400).json({message:"User not found"})
     const isMatch= await bcrypt.compare(password, userFound.password)
 
-    if(!isMatch)return res.status(400).json({message:"Invalida cirdencial"})
+    if(!isMatch)return res.status(400).json({message:"User not found1"})
 
     const token = await createAccessToken({ id: userFound._id });
     res.cookie("token", token);
@@ -43,6 +45,7 @@ export const login = async (req, res) => {
     res.json({
       id: userFound._id,
       username: userFound.username,
+      email:userFound.email,
       createdAt: userFound.createdAt,
       updateAt: userFound.updatedAt,
     });
@@ -66,6 +69,7 @@ export const profile =async (req,res)=>{
     res.json({
       id: userFound._id,
       username: userFound.username,
+      emai:userFound.email,
       createdAt: userFound.createdAt,
       updateAt: userFound.updatedAt,
     });

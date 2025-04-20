@@ -1,4 +1,5 @@
 import mongoose, { mongo } from "mongoose";
+import { string } from "zod";
 
 const userSchema= new mongoose.Schema({
     username:{
@@ -6,6 +7,10 @@ const userSchema= new mongoose.Schema({
         required:true,
         trim:true
 
+    },
+    email:{
+        type:String,
+        required:true
     },
     password:{
         type:String,
